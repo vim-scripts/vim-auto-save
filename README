@@ -1,0 +1,6 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4521
+
+AutoSave - automatically save changes to disk without having to use :w (or any binding to it) every time a buffer has been modified.
+AutoSave is disabled by default, run :AutoSaveToggle to enable/disable AutoSave.
+If you want plugin to be always enabled it can be done with g:auto_save option (place 'let g:auto_save = 1' in your .vimrc).
+Inspired by the same feature in RubyMine text editor.
