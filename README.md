@@ -10,7 +10,16 @@ Inspired by the same feature in RubyMine text editor.
 
 Use [vundle](https://github.com/gmarik/vundle) to install the plugin.
 
-AutoSave is disabled by default, run `:AutoSaveToggle` to enable/disable AutoSave.
+Also you can download [packaged version](http://www.vim.org/scripts/script.php?script_id=4521) from vim.org.
+
+AutoSave is disabled by default, run `:AutoSaveToggle` to enable/disable it.  
+If you want plugin to be always enabled it can be done with`g:auto_save` option:
+
+```VimL
+" .vimrc
+let g:auto_save = 1
+
+```
 
 ## License
 
