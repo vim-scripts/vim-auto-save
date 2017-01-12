@@ -37,11 +37,6 @@ if !exists("g:auto_save_silent")
   let g:auto_save_silent = 0
 endif
 
-" Vim plugin to change the working directory to the project root.
-"
-" Copyright 2010-2016 Andrew Stewart, <boss@airbladesoftware.com>
-" Released under the MIT licence.
-
 if !exists('g:git_patterns')
   let g:git_patterns = ['.git', '.git/', '_darcs/', '.hg/', '.bzr/', '.svn/']
 endif
@@ -121,7 +116,7 @@ function! s:RootDirectory()
   return root_dir
 endfunction
 
-" For third-parties.  Not used by plugin.
+" Code taken from vim-rooter. thanks!
 function! s:FindRootDirectory()
   let s:fd = expand('%:p')
 
