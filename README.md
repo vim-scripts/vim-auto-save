@@ -52,6 +52,14 @@ let g:auto_save_silent = 1  " do not display the auto-save notification
 
 ```
 
+You can choose to only save files located in a version controlled repository with the `g:auto_save_only_git` option:
+
+```VimL
+" .vimrc
+let g:auto_save_only_git = 1  " only save files located in a version controlled repository 
+
+```
+
 If you need an autosave hook (such as generating tags post-save) then use `g:auto_save_postsave_hook` option:
 
 ```VimL
