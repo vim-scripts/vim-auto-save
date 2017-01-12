@@ -158,7 +158,6 @@ function! AutoSave()
   if g:auto_save >= 1 
     if g:auto_save_only_git >= 1 
       if s:is_git_directory >= 1
-        echo "in if "
         let was_modified = &modified
         silent! wa
         if was_modified && !&modified
